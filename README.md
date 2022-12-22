@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Live Link - [Create React App](https://dulcet-nougat-a8426d.netlify.app/dashboard/my-orders).
+Live Link - [Create React App](https://legendary-tarsier-a55a21.netlify.app/).
 
 ## I havae use this project
 
