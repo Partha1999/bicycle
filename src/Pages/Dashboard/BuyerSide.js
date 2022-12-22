@@ -9,7 +9,7 @@ const paymentHandler = (productId, token) => {
 
   const finalData = { cardName, cardNumber, productId };
 
-  fetch(`http://localhost:5000/booking/${productId}`, {
+  fetch(`https://server-nu-navy.vercel.app/booking/${productId}`, {
     method: "PUT",
     headers: {
       authorization: `Bearer ${token}`,
@@ -23,7 +23,7 @@ const paymentHandler = (productId, token) => {
     });
 
   axios
-    .post("http://localhost:5000/payment", finalData)
+    .post("https://server-nu-navy.vercel.app/payment", finalData)
     .then((res) => {
       if (res.data.insertedId) {
         toast.success("Payment Successful");
@@ -37,7 +37,7 @@ const BuyerSide = () => {
   const [myOrders, setMyOrders] = useState();
   const [productId, setProductId] = useState();
   useEffect(() => {
-    fetch("http://localhost:5000/booking")
+    fetch("https://server-nu-navy.vercel.app/booking")
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, []);

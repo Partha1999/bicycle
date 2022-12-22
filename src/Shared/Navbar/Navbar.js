@@ -12,7 +12,7 @@ const Navbar = () => {
       .catch((err) => console.log(err));
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/allUsers/${user?.email || user?.photoURL}`)
+    fetch(`https://server-nu-navy.vercel.app/allUsers/${user?.email || user?.photoURL}`)
       .then((res) => res.json())
       .then((data) => setRole(data?.role));
   }, [user?.email || user?.photoURL]);
