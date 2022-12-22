@@ -38,7 +38,14 @@ const Advertisement = () => {
                 <h3 className="text-xl font-semibold dark:text-teal-400">
                   Price: {x?.itemOriginalPrice}
                 </h3>
-                
+                <button
+                  className="btn btn-sm"
+                  onClick={() => {
+                    handleReport(x);
+                  }}
+                >
+                  Report
+                </button>
               </div>
             </div>
           </div>
