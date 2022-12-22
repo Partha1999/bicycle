@@ -20,3 +20,6 @@ Live Link - [Create React App](https://legendary-tarsier-a55a21.netlify.app/).
 - Buyer
 - Admin
 - Blog
+adminEmail: <a@gmail.com>
+
+adminPassword: <12345>
